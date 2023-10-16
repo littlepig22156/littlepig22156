@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-    .bg{
-        body {
-                background-image: url('cuihao.gif');
-        }
-    }
+    <style>
+        .bg{
+            body {
+                    background-image: url('cuihao.gif');
+            }
+        }	    
+    </style>
   <body>
     <div align="center">
 	<p id="hehe">点击垃圾桶看看里面有些什么吧！</p>
@@ -13,7 +15,15 @@
     <script type="text/javascript">
 		var Bouns=document.getElementById("Bouns");
 		Bouns.onclick=function(){
-			Bouns.src="cuihao.gif";
+			var pic;
+			var rd = Math.floor(Math.random()*5);
+			if (rd == 0){
+				pic="cuihao.jpg"
+			}
+			else{
+				pic="cuihao.gif"
+			}
+			document.getElementById('Bouns').src = pic;
 			document.getElementById("hehe").innerHTML = "崔昊被放出来了！";
 			oBox.className = "bg";
 		}
