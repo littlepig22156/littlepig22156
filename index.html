@@ -2,7 +2,7 @@
 <html>
   <body>
     <div align="center">
-	<p id="hehe" style="font-size:300%;">点击垃圾桶看看里面有些什么吧！</p>
+	<span id="hehe" style="font-size:300%; style=background-color: #FFFAFA">点击垃圾桶看看里面有些什么吧！</span>
         <img id="Bouns" src="buk.png" style="width:400px;height:400px;">
     </div>
     <script type="text/javascript">
@@ -17,7 +17,11 @@
 			}
 			else if (rd == 1){
 				pic="cuihao2.jpg"
-				txt="血红灾变！"
+				txt="血腥凝视！"
+			}
+			else if (rd == 2){
+				pic="cuihao1.gif"
+				txt="路西法的召唤仪式"
 			}
 			else{
 				pic="cuihao.gif";
@@ -25,7 +29,7 @@
 			}
 			document.getElementById('Bouns').src = pic;
 			document.getElementById("hehe").innerHTML = txt;
-			document.body.style.backgroundImage = "url('cuihao.gif')";
+			document.body.style.backgroundImage = "url(pic)";
 		}
     </script>
   </body>
