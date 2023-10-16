@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .bg{
-            body {
-                    background-image: url('cuihao.gif');
-            }
-        }	    
-    </style>
   <body>
+     <style>
+         .bg{
+             background-image: url('cuihao.gif');
+         }	    
+    </style>
     <div align="center">
 	<p id="hehe">点击垃圾桶看看里面有些什么吧！</p>
         <img id="Bouns" src="buk.png" style="width:400px;height:400px;">
@@ -16,7 +14,7 @@
 		var Bouns=document.getElementById("Bouns");
 		Bouns.onclick=function(){
 			var pic;
-			var rd = Math.floor(Math.random()*5);
+			var rd = Math.floor(Math.random()*10);
 			if (rd == 0){
 				pic="cuihao.jpg"
 			}
