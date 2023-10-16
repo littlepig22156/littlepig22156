@@ -7,22 +7,25 @@
          }	    
     </style>
     <div align="center">
-	<p id="hehe">点击垃圾桶看看里面有些什么吧！</p>
+	<p id="hehe" style="font-size:300%;">点击垃圾桶看看里面有些什么吧！</p>
         <img id="Bouns" src="buk.png" style="width:400px;height:400px;">
     </div>
     <script type="text/javascript">
 		var Bouns=document.getElementById("Bouns");
 		Bouns.onclick=function(){
 			var pic;
-			var rd = Math.floor(Math.random()*10);
+			var txt;
+			var rd = Math.floor(Math.random()*6);
 			if (rd == 0){
-				pic="cuihao.jpg"
+				pic="cuihao.jpg";
+				txt="崔昊一动也不动诶！"
 			}
 			else{
-				pic="cuihao.gif"
+				pic="cuihao.gif";
+				txt="崔昊被放出来了！"
 			}
 			document.getElementById('Bouns').src = pic;
-			document.getElementById("hehe").innerHTML = "崔昊被放出来了！";
+			document.getElementById("hehe").innerHTML = txt;
 			oBox.className = "bg";
 		}
     </script>
