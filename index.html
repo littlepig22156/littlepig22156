@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <a href="https://www.baidu.com">
-        <img src="cuihao.gif" style="width:400px;height:400px;">
-    </a>
+    <img id="Bouns" src="cuihao.gif" style="width:400px;height:400px;">
+    <script type="text/javascript">
+		var Bouns=document.getElementById("Bouns");
+		Bouns.onclick=function(){
+			Bouns.src="buk.pug"
+		}
+	</script>
     <style>
     body {
        background-image: url('cuihao.gif');
