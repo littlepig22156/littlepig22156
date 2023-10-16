@@ -5,11 +5,17 @@
 	<p id="hehe">点击垃圾桶看看里面有些什么吧！</p>
         <img id="Bouns" src="buk.png" style="width:400px;height:400px;">
     </div>
+    .bg{
+        body {
+                background-image: url('cuihao.gif');
+        }
+    }
     <script type="text/javascript">
 		var Bouns=document.getElementById("Bouns");
 		Bouns.onclick=function(){
 			Bouns.src="cuihao.gif";
 			document.getElementById("hehe").innerHTML = "崔昊被放出来了！";
+			oBox.className = "bg";
 		}
     </script>
   </body>
