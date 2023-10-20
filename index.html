@@ -3,9 +3,12 @@
   <body>
     <div id="tenimg" align="center">
 	    <div style="background-color:AliceBlue;">
-	        <p id="hehe" style="font-size:300%; style=background-color: snow">崔昊倍功行抽奖箱。</p>
+	        <p id="hehe" style="font-size:300%; style="background-color: snow">崔昊倍功行抽奖箱。</p>
 	    </div>
-        <img id="Bouns" src="buk.png" style="width:400px;height:400px;">
+            <img id="Bouns" src="buk.png" style="width:400px;height:400px;">
+	    <div style="background-color:AliceBlue;">
+	        <p id="index">""</p>
+	    </div>
     </div>
     <script type="text/javascript">
 		var Bouns=document.getElementById("Bouns");
@@ -13,29 +16,37 @@
 			var pic;
 			var txt;
 			var rd = Math.floor(Math.random()*100)+1;
-			if (parseInt(rd) <= parseInt(10)){
+			if (parseInt(rd) <= parseInt(5)){
 				pic="cuihao.jpg";
 				txt="末吉！。崔昊一动也不动诶！"
 			}
-			else if (parseInt(rd) <= parseInt(40)){
-				pic="cuihao2.jpg"
-				txt="吉！崔昊喜气洋洋！"
+			else if (parseInt(rd) <= parseInt(25)){
+				pic="cuihao5.gif"
+				txt="吉！健康的崔昊！"
 			}
-			else if (parseInt(rd) <= parseInt(60)){
+			else if (parseInt(rd) <= parseInt(40)){
 				pic="cuihao2.gif"
 				txt="中吉！崔昊转圈圈！"
 			}
- 			else if (parseInt(rd) <= parseInt(70)){
-				pic="cuihao5.gif"
-				txt="大吉！健康的崔昊！"
+ 			else if (parseInt(rd) <= parseInt(48)){
+				pic="cuihao2.jpg"
+				txt="大吉！崔昊喜气洋洋！"
 			}
-			else if (parseInt(rd) <= parseInt(85)){
+			else if (parseInt(rd) <= parseInt(60)){
 				pic="cuihao3.gif"
 				txt="后吉！崔昊前后移动，近大远小！"
 			}
-			else if (parseInt(rd) >= parseInt(95)){
+			else if (parseInt(rd) <= parseInt(65)){
 				pic="cuihao1.gif"
 				txt="大大吉！看起来像是路西法的召唤仪式！"
+			}
+			else if (parseInt(rd) <= parseInt(80)){
+				pic="cuihao6.gif"
+				txt="半吉！崔昊真的只有一半吉！"
+			}
+			else if (parseInt(rd) <= parseInt(92)){
+				pic="cuihao4.gif"
+				txt="前吉！反复滚动的崔昊！"
 			}
 			else{
 				pic="cuihao.gif";
@@ -45,6 +56,7 @@
 			document.getElementById("hehe").innerHTML = txt;
 			document.body.style.backgroundImage = "url('cuihao.gif')";
 			window.alert("最好只抽一次，无论结果如何，都没有关系哦！祝你开心！");
+			document.getElementById("index").innerHTML = "大大吉>大吉>前吉>吉>中吉>半吉>小吉>后吉>末吉";
 			this.onclick = null;
 		}
     </script>
