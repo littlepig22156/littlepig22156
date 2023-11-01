@@ -157,7 +157,7 @@
 	        <p id="ti" style="font-size:200%; style="background-color: snow">崔昊轮盘赌。</p>
 	</div>
 	<button type="button" onclick="shot()">shoot</button>
-	<button type="button" onclick="another()">another gun</button>
+	<button type="button" onclick="ai()">another gun</button>
     </div>
     <script>
 	    var shot = Math.floor(Math.random()*8)+1;
@@ -169,9 +169,9 @@
 	            }
 		    else{
 			    shoot = shoot + 1;
-			    document.getElementById("hehe").innerHTML = "第" + shoot + "发";
+			    document.getElementById("ti").innerHTML = "第" + shoot + "发";
 		    }
-	    function another(){
+	    function ai(){
 		    var shot = Math.floor(Math.random()*8)+1;
 		    }
     </script>
