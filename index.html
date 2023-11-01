@@ -162,17 +162,22 @@
     <script>
 	    var shot = Math.floor(Math.random()*8)+1;
 	    var shoot = 0;
+	    var si = 0;
+	    var money = 0;
 	    function shot(){
 		    shot = shot - 1;
 		    if (parseInt(shot) <= parseInt(0)){
 			   document.write( "崔昊！不！");
 	            }
 		    else{
+			    si = si + 1
 			    shoot = shoot + 1;
-			    document.getElementById("ti").innerHTML = "第" + shoot + "发";
+			    money = money + si*si*si;
+			    document.getElementById("ti").innerHTML = "第" + shoot + "发" + ",总共" + money + "$";
 		    }
 	    function ai(){
-		    var shot = Math.floor(Math.random()*8)+1;
+		    shot = Math.floor(Math.random()*8)+1;
+		    si = 1;
 		    }
     </script>
   </body>
