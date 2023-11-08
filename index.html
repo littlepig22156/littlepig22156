@@ -210,9 +210,7 @@
 	<script type="text/javascript">
 		var lv=1;
 	        var start1=document.getElementById("start1");
-		start1.onclick=function(){
-			var i=1;
-			while(i<=lv){
+		function setting(){
 			        var ran = Math.floor(Math.random()*9)+1;
 				if (parseInt(ran) == parseInt(1)){
 				      document.getElementById('one').src = "put.gif";
@@ -241,8 +239,13 @@
 				if (parseInt(ran) == parseInt(9)){
 				      document.getElementById('nine').src = "put.gif";
 				}
-				setTimeout(function(){i = i + 1},500);
-		        }
+			}
+		start1.onclick=function(){
+			var i = 1;
+			while(i<=lv){
+		    	        setTimeout(setting,500);
+				i=i+1;
+			}
 		}
 	</script>
   </body>
