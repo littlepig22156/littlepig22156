@@ -240,21 +240,21 @@
 				if (parseInt(ran) == parseInt(9)){
 				      document.getElementById('nine').src = "put.gif";
 				}
+			        setTimeout(function(){document.getElementById('one').src = "white.png";},500);
+				setTimeout(function(){document.getElementById('two').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('three').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('four').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('five').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('six').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('seven').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('eight').src = "white.png";},0);
+				setTimeout(function(){document.getElementById('nine').src = "white.png";},0);
 			}
 		start1.onclick=function(){
 			if (setting == false){
 			    setting = true;
 			    for (let i = 0; i < lv; i++) {
                                 setTimeout(()=>settingnow(), 1000 * (i + 1));
-				document.getElementById('one').src = "white.png";
-				document.getElementById('two').src = "white.png";
-				document.getElementById('three').src = "white.png";
-				document.getElementById('four').src = "white.png";
-				document.getElementById('five').src = "white.png";
-				document.getElementById('six').src = "white.png";
-				document.getElementById('seven').src = "white.png";
-				document.getElementById('eight').src = "white.png";
-				document.getElementById('nine').src = "white.png";
                             }
 			    setting=false;
 			    lv = lv + 1;
