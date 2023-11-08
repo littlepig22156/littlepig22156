@@ -209,6 +209,7 @@
     </div>
 	<script type="text/javascript">
 		var lv=1;
+		var setting=false;
 	        var start1=document.getElementById("start1");
 		function setting(){
 			        var ran = Math.floor(Math.random()*9)+1;
@@ -241,10 +242,14 @@
 				}
 			}
 		start1.onclick=function(){
-			var i = 1;
-			while(i<=lv){
+			if (setting = false){
+			    var setting = true;
+			    var i = 1;
+			    while(i<=lv){
 		    	        setTimeout(setting,500);
 				i=i+1;
+			    }
+			    var setting=false;
 			}
 		}
 	</script>
