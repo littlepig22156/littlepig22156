@@ -212,6 +212,15 @@
 		var setting=false;
 	        var start1=document.getElementById("start1");
 		var start2=document.getElementById("start2");
+		var one=document.getElementById("one");
+		var two=document.getElementById("two");
+		var three=document.getElementById("three");
+		var four=document.getElementById("four");
+		var five=document.getElementById("five");
+		var six=document.getElementById("six");
+		var seven=document.getElementById("seven");
+		var eight=document.getElementById("eight");
+		var nine=document.getElementById("nine");
 		function settingnow(){
 			        var ran = Math.floor(Math.random()*9)+1;
 				if (parseInt(ran) == parseInt(1)){
@@ -259,11 +268,62 @@
                             }
 			    lv = lv + 1;
 			    document.getElementById('start1').src = "put.gif";
-			    setTimeout(()=>{document.getElementById('start1').src = "white.png";},500);
-			    setTimeout(()=>{setting = false}, parseInt(lv * 1000 - 1000));
+			    setTimeout(()=>{document.getElementById('start1').src = "white.png";},parseInt(lv * 1000));
 			}
 		}
-		start2.onclick=function(){
+		one.onclick=function(){
+			if (setting == false){
+				document.getElementById('one').src = "put.gif";
+				setTimeout(()=>{document.getElementById('one').src = "white.png";},500);
+		        }
+		}
+		two.onclick=function(){
+			if (setting == false){
+				document.getElementById('two').src = "put.gif";
+				setTimeout(()=>{document.getElementById('two').src = "white.png";},500);
+		        }
+		}
+		three.onclick=function(){
+			if (setting == false){
+				document.getElementById('three').src = "put.gif";
+				setTimeout(()=>{document.getElementById('three').src = "white.png";},500);
+		        }
+		}
+		four.onclick=function(){
+			if (setting == false){
+				document.getElementById('four').src = "put.gif";
+				setTimeout(()=>{document.getElementById('four').src = "white.png";},500);
+		        }
+		}
+		five.onclick=function(){
+			if (setting == false){
+				document.getElementById('five').src = "put.gif";
+				setTimeout(()=>{document.getElementById('five').src = "white.png";},500);
+		        }
+		}
+		six.onclick=function(){
+			if (setting == false){
+				document.getElementById('six').src = "put.gif";
+				setTimeout(()=>{document.getElementById('six').src = "white.png";},500);
+		        }
+		}
+		seven.onclick=function(){
+			if (setting == false){
+				document.getElementById('seven').src = "put.gif";
+				setTimeout(()=>{document.getElementById('seven').src = "white.png";},500);
+		        }
+		}
+		eight.onclick=function(){
+			if (setting == false){
+				document.getElementById('eight').src = "put.gif";
+				setTimeout(()=>{document.getElementById('eight').src = "white.png";},500);
+		        }
+		}
+		nine.onclick=function(){
+			if (setting == false){
+				document.getElementById('nine').src = "put.gif";
+				setTimeout(()=>{document.getElementById('nine').src = "white.png";},500);
+		        }
 		}
 	</script>
   </body>
