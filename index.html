@@ -260,7 +260,7 @@
 				      document.getElementById('nine').src = "put.gif";
 				      setTimeout(()=>{document.getElementById('nine').src = "white.png";},500);
 				}
-			        push.arr=(ran);
+			        push.arr(ran);
 			}
 		start1.onclick=function(){
 			if (setting == false){
@@ -269,16 +269,16 @@
 			    for (let i = 0; i < lv; i++) {
                                 setTimeout(()=>settingnow(), 1000 * (i + 1));
                             }
-			    lv = lv + 1;
 			    document.getElementById('start1').src = "put.gif";
 			    setTimeout(()=>{document.getElementById('start1').src = "white.png";},parseInt(lv * 1000));
 			    setTimeout(arr.reverse(),parseInt(lv * 1000 - 500))
+			    setTimeout(()=>{setting = false},parseInt(lv * 1000));
 			}
 		}
 		start2.onclick=function(){
 			if (setting == false){
 			    if(arr == []){
-				    setting == true;
+				    lv = lv + 1;
 			    }
 			    else{
 				    document.write(1);
