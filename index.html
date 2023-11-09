@@ -262,9 +262,9 @@
 			    lv = lv + 1;
 			    document.getElementById('start1').src = "put.gif";
 			    setTimeout(()=>{document.getElementById('start1').src = "white.png";},500);
-			    setTimeout(()=>{var setting = false}, waitms);
+			    setTimeout(()=>{var setting = false}, parseInt(waitms));
 			}
-			document.getElementById("hehe").innerHTML = setting;
+			document.getElementById("hehe").innerHTML = setting + "" + waitms;
 		}
 		start2.onclick=function(){
 			if (setting == true){
