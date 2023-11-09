@@ -277,6 +277,8 @@
 		}
 		start2.onclick=function(){
 			if (setting == false){
+			    document.getElementById('start2').src = "put.gif";
+			    setTimeout(()=>{document.getElementById('start2').src = "white.png";},500);
 			    if(arr == []){
 				    lv = lv + 1;
 			    }
