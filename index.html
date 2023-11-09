@@ -211,6 +211,7 @@
 		var lv=1;
 		var setting=false;
 	        var start1=document.getElementById("start1");
+		var start2=document.getElementById("start2");
 		function settingnow(){
 			        var ran = Math.floor(Math.random()*9)+1;
 				if (parseInt(ran) == parseInt(1)){
@@ -252,13 +253,17 @@
 			}
 		start1.onclick=function(){
 			if (setting == false){
-			    setting = true;
+			    var setting = true;
 			    for (let i = 0; i < lv; i++) {
                                 setTimeout(()=>settingnow(), 1000 * (i + 1));
                             }
 			    lv = lv + 1;
 			}
-			setting = false;
+		}
+		start2.onclick=function(){
+			if (setting == true){
+			    var setting = false;
+			}
 		}
 	</script>
   </body>
