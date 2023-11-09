@@ -205,6 +205,9 @@
 	    <img id="start1" src="white.png" style="width:100px;height:100px;">
 	    <img id="start2" src="white.png" style="width:100px;height:100px;">
 	</div>
+	<div align="center">
+	    <p id="level"></p>
+	</div>
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 	<script type="text/javascript">
@@ -260,7 +263,7 @@
 				      document.getElementById('nine').src = "put.gif";
 				      setTimeout(()=>{document.getElementById('nine').src = "white.png";},500);
 				}
-			        push.arr(ran);
+			        arr.push(ran);
 			}
 		start1.onclick=function(){
 			if (setting == false){
@@ -274,6 +277,7 @@
 			    setTimeout(arr.reverse(),parseInt(lv * 1000 - 500))
 			    setTimeout(()=>{setting = false},parseInt(lv * 1000));
 			}
+			document.getElementById("level").innerHTML = lv;
 		}
 		start2.onclick=function(){
 			if (setting == false){
