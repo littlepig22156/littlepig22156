@@ -262,13 +262,13 @@
 			    lv = lv + 1;
 			    document.getElementById('start1').src = "put.gif";
 			    setTimeout(()=>{document.getElementById('start1').src = "white.png";},500);
-			    setTimeout(()=>{var setting = false}, parseInt(waitms));
+			    setTimeout(()=>{setting = false}, parseInt(waitms));
 			}
 			document.getElementById("hehe").innerHTML = setting + "" + waitms;
 		}
 		start2.onclick=function(){
 			if (setting == true){
-			    var setting = false;
+			    setting = false;
 			}
 			document.getElementById("hehe").innerHTML = setting + "" + waitms;
 		}
