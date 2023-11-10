@@ -214,7 +214,7 @@
 	<script type="text/javascript">
 		var lv=1;
 		var txty;
-		var intr="按倒序依次点击图片，完成后点结束按钮，看看你的成绩吧！";
+		var intr="按顺序依次点击图片，完成后点结束按钮，看看你的成绩吧！";
 		var setting=false;
 	        var start1=document.getElementById("start1");
 		var start2=document.getElementById("start2");
@@ -293,7 +293,7 @@
 				    txty = lv;
 			    }else{
 				    txty = "error";
-				    if (intr !== "按倒序依次点击图片，完成后点结束按钮，看看你的成绩吧！"){
+				    if (intr == "按顺序依次点击图片，完成后点结束按钮，看看你的成绩吧！"){
 				        intr = "崔昊";
 				        for (let i = 0; i < lv; i++) {
                                             intr = intr + "!";
