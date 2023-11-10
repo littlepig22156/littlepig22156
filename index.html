@@ -207,11 +207,13 @@
 	</div>
 	<div align="center">
 	    <p id="level" style="font-size:300%; style="background-color: snow"></p>
+	    <p id="introd" style="font-size:100%; style="background-color: snow"></p>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 	<script type="text/javascript">
 		var lv=1;
+		var txty;
 		var setting=false;
 	        var start1=document.getElementById("start1");
 		var start2=document.getElementById("start2");
@@ -266,6 +268,7 @@
 			        arr.push(ran);
 			}
 		start1.onclick=function(){
+			document.getElementById("introd").innerHTML = "按倒序依次点击图片，完成后点结束按钮，看看你的成绩吧！";
 			document.body.style.backgroundImage = "url('white.png')";
 			if (setting == false){
 			    setting = true;
@@ -284,9 +287,12 @@
 			    setTimeout(()=>{document.getElementById('start2').src = "white.png";},500);
 			    if(arr.length == 0){
 				    lv = lv + 1;
+				    txty = lv;
+			    }else{
+				    txty = "false";
 			    }
 			}
-			document.getElementById("level").innerHTML = lv;
+			document.getElementById("level").innerHTML = txty;
 		}
 		one.onclick=function(){
 			if (setting == false){
@@ -294,7 +300,7 @@
 				document.getElementById('one').src = "put.gif";
 				setTimeout(()=>{document.getElementById('one').src = "white.png";},500);
 				if(last !== 1){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -304,7 +310,7 @@
 				document.getElementById('two').src = "put.gif";
 				setTimeout(()=>{document.getElementById('two').src = "white.png";},500);
 				if(last !== 2){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -314,7 +320,7 @@
 				document.getElementById('three').src = "put.gif";
 				setTimeout(()=>{document.getElementById('three').src = "white.png";},500);
 				if(last !== 3){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -324,7 +330,7 @@
 				document.getElementById('four').src = "put.gif";
 				setTimeout(()=>{document.getElementById('four').src = "white.png";},500);
 				if(last !== 4){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -334,7 +340,7 @@
 				document.getElementById('five').src = "put.gif";
 				setTimeout(()=>{document.getElementById('five').src = "white.png";},500);
 				if(last !== 5){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -344,7 +350,7 @@
 				document.getElementById('six').src = "put.gif";
 				setTimeout(()=>{document.getElementById('six').src = "white.png";},500);
 				if(last !== 6){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -354,7 +360,7 @@
 				document.getElementById('seven').src = "put.gif";
 				setTimeout(()=>{document.getElementById('seven').src = "white.png";},500);
 				if(last !== 7){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -364,7 +370,7 @@
 				document.getElementById('eight').src = "put.gif";
 				setTimeout(()=>{document.getElementById('eight').src = "white.png";},500);
 				if(last !== 8){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
@@ -374,7 +380,7 @@
 				document.getElementById('nine').src = "put.gif";
 				setTimeout(()=>{document.getElementById('nine').src = "white.png";},500);
 				if(last !== 9){
-					document.write(1);
+					arr.push(100);
 				}
 		        }
 		}
