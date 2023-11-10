@@ -281,6 +281,7 @@
 			    document.getElementById('start1').src = "put.gif";
 			    setTimeout(()=>{document.getElementById('start1').src = "white.png";},500);
 			    setTimeout(()=>{setting = false},parseInt(lv * 1000));
+			    setTimeout(()=>{arr = arr.reverse()},parseInt(lv * 1000));
 			}
 		}
 		start2.onclick=function(){
@@ -292,10 +293,12 @@
 				    txty = lv;
 			    }else{
 				    txty = "error";
-				    intr = "崔昊";
-				    for (let i = 0; i < lv; i++) {
-                                        intr = intr + "!";
-                                    }
+				    if (intr !== "按倒序依次点击图片，完成后点结束按钮，看看你的成绩吧！"){
+				        intr = "崔昊";
+				        for (let i = 0; i < lv; i++) {
+                                            intr = intr + "!";
+                                        }
+				    }
 			    }
 			}
 			document.getElementById("level").innerHTML = txty;
