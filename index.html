@@ -214,6 +214,7 @@
 	<script type="text/javascript">
 		var lv=1;
 		var txty;
+		var intr="按倒序依次点击图片，完成后点结束按钮，看看你的成绩吧！";
 		var setting=false;
 	        var start1=document.getElementById("start1");
 		var start2=document.getElementById("start2");
@@ -268,7 +269,8 @@
 			        arr.push(ran);
 			}
 		start1.onclick=function(){
-			document.getElementById("introd").innerHTML = "按倒序依次点击图片，完成后点结束按钮，看看你的成绩吧！";
+			document.getElementById("introd").innerHTML = intr;
+			document.getElementById("level").innerHTML = lv;
 			document.body.style.backgroundImage = "url('white.png')";
 			if (setting == false){
 			    setting = true;
@@ -289,7 +291,11 @@
 				    lv = lv + 1;
 				    txty = lv;
 			    }else{
-				    txty = "false";
+				    txty = "error";
+				    intr = "崔昊";
+				    for (let i = 0; i < lv; i++) {
+                                        intr = intr + "!";
+                                    }
 			    }
 			}
 			document.getElementById("level").innerHTML = txty;
